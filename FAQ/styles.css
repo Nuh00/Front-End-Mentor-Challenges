@@ -1,1 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+}
+
+
+
+    @font-face {
+        font-family: 'Work Sans';
+        src: url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap') format('woff2');
+        font-weight: 400, 600,700;
+        font-style: normal;
+    }
+
+ 
+
+body {
+    
+    background-color: var(--light-pink);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+
+    
+    
+    
+}
+
+body > main{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+main {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--white);
+    
+}
+
+.center-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: -10rem;
+
+}
+
+.image {
+    display: block;
+    width: 100%;
+}
+
 
