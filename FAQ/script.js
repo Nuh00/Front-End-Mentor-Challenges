@@ -1,6 +1,7 @@
 let buttonImg = document.querySelectorAll('#buttonImg');
 
 
+// buttonImg.forEach((button) => {
 buttonImg.forEach((button) => {
     button.addEventListener('click', (renderButton) )
 }); 
@@ -17,6 +18,3 @@ function renderButton(event) {
     
 }
 
-
-// todo 1: obtain the class to "show" and remove "show"
-// todo 2: obtain the image so it can be changed
