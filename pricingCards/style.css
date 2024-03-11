@@ -4,11 +4,143 @@
     box-sizing: border-box;
 }
 
+:root {
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     background-color: hsl(225, 100%, 98%);
     min-height: 100vh;
-    background-image: url('/pricing-component-with-toggle-master/images/bg-top.svg'), url('/pricing-component-with-toggle-master/images/bg-bottom.svg');
+    background-image: url('./images/bg-top.svg'), url('./images/bg-bottom.svg');
     background-repeat: no-repeat;
     background-position: top right, bottom left;
+}
+
+ul{
+    list-style: none;
+
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.pricing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.pricing-boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 600px;
+
+
+}
+
+
+.pricing-box h1{
+    font-family: "montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.5rem;
+    color: hsl(228, 39%, 23%)
+
+}
+
+
+
+
+
+
+.pricing-box{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    width: 300px;
+}
+
+
+
+
+.pricing-box ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+.pricing-box a{
+    margin-top: 2rem;
+    text-decoration: none;
+    color: hsl(228, 39%, 23%);
+    padding: 1rem 2rem;
+    width: 100%;
+    text-align: center;
+    background-color: hsl(227, 12%, 61%);
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+
+a{
+    text-decoration: none;
+    color: hsl(228, 39%, 23%);
+}
+
+
+
+
+
+
+
+
+/* UTILITIES */
+.featured{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+}
+
+
+.special{
+    margin-top: 4rem;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
 }
