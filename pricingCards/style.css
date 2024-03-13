@@ -10,6 +10,14 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+
+
+  --primary-gradient: linear-gradient(180deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    --neutral-very-light-grayish-blue: hsl(240, 78%, 98%);
+    --neutral-light-grayish-blue: hsl(234, 14%, 74%);
+    --neutral-grayish-blue: hsl(233, 13%, 49%);
+    --neutral-dark-grayish-blue: hsl(232, 13%, 33%);
+  
 }
 
 body{
@@ -72,7 +80,7 @@ ul{
     font-weight: 700;
     font-style: normal;
     font-size: 3.5rem;
-    color: hsl(228, 39%, 23%)
+    
 
 }
 
@@ -91,6 +99,7 @@ ul{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: white;
+    color: hsl(228, 39%, 23%);
     width: 300px;
 }
 
@@ -106,41 +115,46 @@ ul{
     padding: 1rem;
 }
 
-.pricing-box a{
-    margin-top: 2rem;
-    text-decoration: none;
-    color: hsl(228, 39%, 23%);
-    padding: 1rem 2rem;
-    width: 100%;
-    text-align: center;
-    background-color: hsl(227, 12%, 61%);
-    color: white;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-
-a{
-    text-decoration: none;
-    color: hsl(228, 39%, 23%);
-}
-
-
-
-
-
 
 
 
 /* UTILITIES */
+
 .featured{
-    background-color: hsl(245, 75%, 52%);
+    background: var(--primary-gradient);
     color: white;
 }
 
 
 .special{
     margin-top: 4rem;
-    background-color: hsl(245, 75%, 52%);
-    color: white;
 }
+
+
+/* BUTTONS */
+.normal-button{
+    margin-top: 2rem;
+    text-decoration: none;
+    color: white;   
+    padding: 1rem 2rem;
+    width: 100%;
+    text-align: center;
+    background-color: hsl(236, 72%, 79%);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.special-button{
+    margin-top: 2rem;
+    text-decoration: none;
+    color: hsl(228, 39%, 23%);
+    padding: 1rem 2rem;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    color: hsl(228, 39%, 23%);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+
